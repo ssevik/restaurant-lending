@@ -1,0 +1,36 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="cart" viewBox="0 0 32 32">
+      <path fill="#fff" style="fill: var(--color1, #fff)" d="M-3.2-4.379h49.179v42.105h-49.179z"></path>
+    </symbol>
+
+    <symbol id="logo" viewBox="0 0 32 32">
+      <path fill="none" stroke="#ff7400" style="stroke: var(--color3, #ff7400)" stroke-linejoin="miter"
+        stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.1333"
+        d="M1.498 16l9.376-9.503 9.375 9.503-9.376 9.503z"></path>
+      <path fill="none" stroke="#ff7400" style="stroke: var(--color3, #ff7400)" stroke-linejoin="miter"
+        stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.1333"
+        d="M11.75 16l9.376-9.503 9.375 9.503-9.376 9.503z"></path>
+    </symbol>
+    <symbol id="open-menu" viewBox="0 0 32 32">
+      <path fill="#ff7400" style="fill: var(--color3, #ff7400)"
+        d="M1.677 6.71h28.516c0.926 0 1.677 0.751 1.677 1.677s-0.751 1.677-1.677 1.677h-28.516c-0.926 0-1.677-0.751-1.677-1.677s0.751-1.677 1.677-1.677z">
+      </path>
+      <path fill="#ff7400" style="fill: var(--color3, #ff7400)"
+        d="M1.677 14.194h28.516c0.926 0 1.677 0.751 1.677 1.677s-0.751 1.677-1.677 1.677h-28.516c-0.926 0-1.677-0.751-1.677-1.677s0.751-1.677 1.677-1.677z">
+      </path>
+      <path fill="#ff7400" style="fill: var(--color3, #ff7400)"
+        d="M1.677 21.677h28.516c0.926 0 1.677 0.751 1.677 1.677s-0.751 1.677-1.677 1.677h-28.516c-0.926 0-1.677-0.751-1.677-1.677s0.751-1.677 1.677-1.677z">
+      </path>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 32 32">
+      <path fill="#fff" style="fill: var(--color1, #fff)" d="M-12.607-113.454h181.333v167.758h-181.333z"></path>
+    </symbol>
+    <symbol id="close-menu" viewBox="0 0 32 32">
+      <path
+        d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z">
+      </path>
+    </symbol>
+  </defs>
+</svg>
