@@ -1,0 +1,16 @@
+@import './utils/normalize';
+@import './utils/reset';
+@import './utils/variables';
+@import './utils/general';
+
+@import './mixins/mixin';
+
+@import './components/mob-menu';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/history';
+@import './layouts/dish';
+@import './layouts/menu';
+@import './layouts/gallery';
+@import './layouts/cook';

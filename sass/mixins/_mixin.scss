@@ -1,0 +1,32 @@
+@mixin transition($tipe) {
+  transition-property: $tipe;
+  transition-duration: 300ms;
+  transition-timing-function: $animationCubicBezier;
+}
+
+@mixin padding($type) {
+  padding: $type;
+}
+
+@mixin button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  @include padding(0.875em);
+
+  background-color: $accentColor;
+  color: $accentTextColor;
+
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.357;
+  text-transform: uppercase;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $titleDecorColor;
+  }
+}

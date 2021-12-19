@@ -5,86 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header start -->
     <header class="header">
-      <a class="header__logo" href="">
-        <svg class="logo__svg">
-          <use href="./images/sprite.svg#logo"></use>
-        </svg>
-      </a>
-
-      <button
-        class="burger-btn js-open-menu"
-        type="button"
-        aria-expanded="false"
-        aria-controls="header-wrap"
-        data-menu-button
-      >
-        <svg aria-label="кнопка мобильного меню" width="40" height="40">
-          <use class="icon__open-burger" href="./images/sprite.svg#open-menu"></use>
-        </svg>
-      </button>
-
-      <div class="mob-menu">
-        <button>
-          <svg class="">
-            <use href="./images/sprite.svg#close-menu"></use>
-          </svg>
-        </button>
-
-        <ul class="mob-menu__list">
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="">ГЛАВНАЯ</a>
-          </li>
-
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="">МЕНЮ</a>
-          </li>
-
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="">О НАС</a>
-          </li>
-
-          <li class="mob-menu__item">
-            <a class="mob-menu__link" href="">БРОНЬ</a>
-          </li>
-        </ul>
-
-        <div class="mob-menu__tel">
-          <a class="tel__link" href="tel:9998887654">
-            <svg class="tel__svg">
-              <use href="./images/sprite.svg#phone"></use>
+      <div class="container">
+        <div class="header-wrap">
+          <a class="header__logo" href="">
+            <svg class="logo__svg">
+              <use href="./images/sprite.svg#logo"></use>
             </svg>
-            +999-888-76-54</a
-          >
-          <p class="tel__text">Свяжитесь с нами для бронирования</p>
-        </div>
-      </div>
+          </a>
 
-      <div class="mob-menu__btn">
-        <a class="btn__link" href="">ЗАКАЗ СТОЛИКА</a>
+          <button
+            class="menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg class="open-menu__svg" aria-label="кнопка мобильного меню" width="30" height="18">
+              <use href="./images/sprite.svg#open-menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <!-- header end -->
     <main>
       <!-- hero start -->
-      <section class="section">
-        <div class="container">
-          <h1 class="hero__title">Добро пожаловать в<span class="hero__sub">наш ресторан</span></h1>
-          <p class="hero__text">ДОМ ЛУЧШЕЙ ЕДЫ</p>
 
-          <div class="hero__btn">
-            <a class="btn__link" href="">МЕНЮ</a>
+      <section class="section">
+        <div class="bg"></div>
+        <div class="container hero">
+          <div class="hero-content">
+            <h1 class="hero__title">
+              Добро пожаловать в <span class="hero__sub">наш ресторан</span>
+            </h1>
+            <p class="hero__text">ДОМ ЛУЧШЕЙ ЕДЫ</p>
+
+            <div class="hero__btn">
+              <a class="hero__btn--link" href="">МЕНЮ</a>
+            </div>
           </div>
 
           <ul class="hero__list">
             <li class="hero__item">
               <img src="./images/hero-icon.png" alt="иконка блюда" width="87" />
+
               <h2 class="hero__item--title">
-                Магическая<span class="hero__decor">Атмосфера</span>
+                Магическая <span class="hero__decor">Атмосфера</span>
               </h2>
+
               <p class="hero__item--text">
                 В нашем заведении царит магическая атмосфера наполненная вкусными ароматами
               </p>
@@ -92,13 +74,17 @@
 
             <li class="hero__item">
               <img src="./images/hero-icon.png" alt="иконка блюда" width="87" />
-              <h2 class="hero__item--title">Лучшее качество<span class="hero__decor">Еды</span></h2>
+
+              <h2 class="hero__item--title">
+                Лучшее качество <span class="hero__decor">Еды</span>
+              </h2>
+
               <p class="hero__item--text">Качество нашей Еды - отменное!</p>
             </li>
 
             <li class="hero__item">
               <img src="./images/hero-icon.png" alt="иконка блюда" width="87" />
-              <h2 class="hero__item--title">Недорогая<span class="hero__decor">Еда</span></h2>
+              <h2 class="hero__item--title">Недорогая <span class="hero__decor">Еда</span></h2>
               <p class="hero__item--text">
                 Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!
               </p>
@@ -112,7 +98,10 @@
       <section class="section">
         <div class="container">
           <div class="history">
-            <h2 class="title">Наша<span class="title__decor">История</span></h2>
+            <div class="history-title">
+              <h2 class="title">Наша <span class="title__decor">История</span></h2>
+            </div>
+
             <p class="history__text">
               Как и у любого другого самобытного места, у нас есть своя, особая история. Идея
               ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего
@@ -156,39 +145,48 @@
               <img class="layer3--img" src="./images/history-3.png" alt="специи" width="233" />
             </div>
           </div>
+        </div>
 
-          <div class="history__card">
-            <h3 class="history__card--title">Отпразднуйте в одном из самых лучших ресторанов.</h3>
-            <p class="history__card--text">Только в этом месяце бизнес-ланч от 250 ₽</p>
-            <a class="btn__link" href="">ЗАКАЗ СТОЛИКА</a>
-          </div>
+        <div class="history__card">
+          <h3 class="history__card--title">Отпразднуйте в одном из самых лучших ресторанов.</h3>
+          <p class="history__card--text">Только в этом месяце бизнес-ланч от 250 ₽</p>
+          <a class="history__card--btn" href="">ЗАКАЗ СТОЛИКА</a>
         </div>
       </section>
       <!-- history and -->
 
       <!-- dish start -->
       <section class="section">
-        <div class="container">
-          <h2 class="title">Наши<span class="title__decor">Блюда</span></h2>
-          <img class="dish__img" src="./images/dish-1.jpg" alt="кусок пицы" width="320" />
+        <div class="container dish">
+          <h2 class="dish__title title">Наши <span class="title__decor">Блюда</span></h2>
+          <div class="dish__inner">
+            <img class="dish__img" src="./images/dish-1.jpg" alt="кусок пицы" width="320" />
+          </div>
 
           <ul class="dish__list">
             <li class="dish__item">
               <img class="dish__item--img" src="./images/dish-2.jpg" alt="гамбургер" width="130" />
-              <p class="dish__item--text">Гамбургер мини</p>
-              <p class="dish__item--price">220 ₽</p>
+              <div class="dish__item__content">
+                <p class="content__text">Гамбургер мини</p>
+                <p class="content__price">220 ₽</p>
+              </div>
             </li>
 
             <li class="dish__item">
               <img class="dish__item--img" src="./images/dish-2.jpg" alt="гамбургер" width="130" />
-              <p class="dish__item--text">Гамбургер мини</p>
-              <p class="dish__item--price">220 ₽</p>
+
+              <div class="dish__item__content">
+                <p class="content__text">Гамбургер мини</p>
+                <p class="content__price">220 ₽</p>
+              </div>
             </li>
 
             <li class="dish__item">
               <img class="dish__item--img" src="./images/dish-2.jpg" alt="гамбургер" width="130" />
-              <p class="dish__item--text">Гамбургер мини</p>
-              <p class="dish__item--price">220 ₽</p>
+              <div class="dish__item__content">
+                <p class="content__text">Гамбургер мини</p>
+                <p class="content__price">220 ₽</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -197,35 +195,74 @@
 
       <!-- menu start -->
       <section class="section">
-        <div class="comtainer">
-          <h2 class="title">Наше меню</h2>
+        <div class="menu-bg">
+          <div class="container menu-container">
+            <h2 class="menu-title">Наше меню</h2>
 
-          <ul class="menu__list">
-            <li class="menu__inem">
-              <div class="menu__inner">
-                <img class="menu__inem--img" src="./images/menu.jpg" alt="чизбургер" width="300" />
+            <ul class="menu__list">
+              <li class="menu__inem">
+                <p class="menu__inem--recom">RECOMMENDED</p>
+                <div class="menu__inner">
+                  <div class="menu__inner--prices">
+                    <p class="prices__text">$42</p>
+                  </div>
+                  <img
+                    class="menu__inner--img"
+                    src="./images/menu.jpg"
+                    alt="чизбургер"
+                    width="300"
+                  />
+                </div>
+                <h3 class="menu__inem--title">Гамбергер макси</h3>
+                <p class="menu__inem--text">Максимально толстый слой мяса</p>
+                <a class="menu__inem--btn" href="">ЗАКАЗАТЬ</a>
+              </li>
+            </ul>
+
+            <div class="testimonial-slider swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="testimonial swiper-slide">
+                  <p class="testimonial__text">
+                    Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек
+                    родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки.
+                    Будем рекомендовать этот ресторан своим друзьям и родственникам также за
+                    рубежом, путешествующих в Санкт-Петербург!!!
+                  </p>
+                  <div class="testimonial-inner">
+                    <img
+                      class="testimonial-inner__img"
+                      src="./images/menu-icon.jpg"
+                      alt="фото посетителя"
+                      width="149"
+                    />
+                  </div>
+
+                  <h3 class="testimonial__title">Посетитель</h3>
+                  <p class="testimonial__name">Николай</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                  <p class="testimonial__text">
+                    Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек
+                    родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки.
+                    Будем рекомендовать этот ресторан своим друзьям и родственникам также за
+                    рубежом, путешествующих в Санкт-Петербург!!!
+                  </p>
+                  <div class="testimonial-inner">
+                    <img
+                      class="testimonial-inner__img"
+                      src="./images/menu-icon.jpg"
+                      alt="фото посетителя"
+                      width="149"
+                    />
+                  </div>
+
+                  <h3 class="testimonial__title">Бывалый</h3>
+                  <p class="testimonial__name">Колян</p>
+                </div>
               </div>
-              <h3 class="menu__inem--title">Гамбергер макси</h3>
-              <p class="menu__inem--text">Максимально толстый слой мяса</p>
-              <a class="btn__link" href="">ЗАКАЗАТЬ</a>
-            </li>
-          </ul>
-
-          <div class="testimonial">
-            <p class="testimonial__text">
-              Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной
-              Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем
-              рекомендовать этот ресторан своим друзьям и родственникам также за рубежом,
-              путешествующих в Санкт-Петербург!!!
-            </p>
-            <img
-              class="testimonial__img"
-              src="./images/menu-icon.jpg"
-              alt="фото посетителя"
-              width="149"
-            />
-            <h3 class="testimonial__title">Посетитель</h3>
-            <p class="testimonial__name">Николай</p>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -233,62 +270,74 @@
 
       <!-- gallery start -->
       <section class="section">
-        <div class="container">
-          <h2 class="title">Галерея<span class="title__decor">Блюд</span></h2>
+        <div class="container gallery">
+          <h2 class="gallery-title title">Галерея <span class="title__decor">Блюд</span></h2>
 
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img
-                class="gallery__item--img"
-                src="./images/gallery-1.jpg"
-                alt="бокал вина"
-                width="290"
-              />
+              <div class="gallery__item--box">
+                <img
+                  class="gallery__item--img"
+                  src="./images/gallery-1.jpg"
+                  alt="бокал вина"
+                  width="290"
+                />
+              </div>
             </li>
 
             <li class="gallery__item">
-              <img
-                class="gallery__item--img"
-                src="./images/gallery-2.jpg"
-                alt="чашка капучино"
-                width="290"
-              />
+              <div class="gallery__item--box">
+                <img
+                  class="gallery__item--img"
+                  src="./images/gallery-2.jpg"
+                  alt="чашка капучино"
+                  width="290"
+                />
+              </div>
             </li>
 
             <li class="gallery__item">
-              <img
-                class="gallery__item--img"
-                src="./images/gallery-3.jpg"
-                alt="тарелка с борщем"
-                width="290"
-              />
+              <div class="gallery__item--box">
+                <img
+                  class="gallery__item--img"
+                  src="./images/gallery-3.jpg"
+                  alt="тарелка с борщем"
+                  width="290"
+                />
+              </div>
             </li>
 
             <li class="gallery__item">
-              <img
-                class="gallery__item--img"
-                src="./images/gallery-2.jpg"
-                alt="чашка капучино"
-                width="290"
-              />
+              <div class="gallery__item--box">
+                <img
+                  class="gallery__item--img"
+                  src="./images/gallery-2.jpg"
+                  alt="чашка капучино"
+                  width="290"
+                />
+              </div>
             </li>
 
             <li class="gallery__item">
-              <img
-                class="gallery__item--img"
-                src="./images/gallery-3.jpg"
-                alt="тарелка с борщем"
-                width="290"
-              />
+              <div class="gallery__item--box">
+                <img
+                  class="gallery__item--img"
+                  src="./images/gallery-3.jpg"
+                  alt="тарелка с борщем"
+                  width="290"
+                />
+              </div>
             </li>
 
             <li class="gallery__item">
-              <img
-                class="gallery__item--img"
-                src="./images/gallery-1.jpg"
-                alt="бокал вина"
-                width="290"
-              />
+              <div class="gallery__item--box">
+                <img
+                  class="gallery__item--img"
+                  src="./images/gallery-1.jpg"
+                  alt="бокал вина"
+                  width="290"
+                />
+              </div>
             </li>
           </ul>
         </div>
@@ -297,19 +346,36 @@
 
       <!-- cook start -->
       <section class="section">
-        <div class="container">
-          <h2 class="title">Наши<span class="title__decor">Повара</span></h2>
+        <div class="container cook">
+          <h2 class="cook-title title">Наши <span class="title__decor">Повара</span></h2>
 
           <ul class="cook__list">
             <li class="cook__item">
-              <img class="cook__item--img" src="./images/cook-1.jpg" alt="шеф повар" width="288" />
-              <img class="cook__item--img" src="./images/cook-2.jpg" alt="су-шеф" width="288" />
-              <img
-                class="cook__item--img"
-                src="./images/cook-3.jpg"
-                alt="повар заготовщик"
-                width="288"
-              />
+              <div class="cook__item--box">
+                <img
+                  class="cook__item--img"
+                  src="./images/cook-1.jpg"
+                  alt="шеф повар"
+                  width="288"
+                />
+              </div>
+            </li>
+
+            <li class="cook__item">
+              <div class="cook__item--box">
+                <img class="cook__item--img" src="./images/cook-2.jpg" alt="су-шеф" width="288" />
+              </div>
+            </li>
+
+            <li class="cook__item">
+              <div class="cook__item--box">
+                <img
+                  class="cook__item--img"
+                  src="./images/cook-3.jpg"
+                  alt="повар заготовщик"
+                  width="288"
+                />
+              </div>
             </li>
           </ul>
         </div>
@@ -320,5 +386,59 @@
     <!-- footer start -->
     <footer class="footer"></footer>
     <!-- footer and -->
+
+    <!-- mob-menu start -->
+    <div class="mob-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle close-menu js-close-menu" type="button">
+        <svg class="close-menu__svg" aria-label="кнопка мобильного меню" width="30" height="30">
+          <use href="./images/sprite.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <div class="mob-menu__inner">
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">ГЛАВНАЯ</a>
+          </li>
+
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">МЕНЮ</a>
+          </li>
+
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">О НАС</a>
+          </li>
+
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">БРОНЬ</a>
+          </li>
+        </ul>
+
+        <div class="mob-menu__tel">
+          <a class="tel__link" href="tel:9998887654">
+            <svg class="tel__svg">
+              <use href="./images/sprite.svg#smartphone"></use>
+            </svg>
+            +999-888-76-54</a
+          >
+        </div>
+
+        <div class="mob-menu__btn">
+          <a class="btn__link" href="">ЗАКАЗ СТОЛИКА</a>
+        </div>
+      </div>
+    </div>
+    <!-- mob-menu and -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

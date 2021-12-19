@@ -1,0 +1,27 @@
+.header-wrap {
+  display: flex;
+  align-items: center;
+
+  padding-top: 1.25em;
+  margin-bottom: 15.75rem;
+}
+
+.logo__svg {
+  width: 45px;
+  height: 31px;
+}
+
+.menu-toggle {
+  margin-left: auto;
+
+  background-color: transparent;
+  fill: $accentColor;
+
+  cursor: pointer;
+  @include transition(fill);
+
+  &:hover,
+  &:focus {
+    fill: $titleDecorColor;
+  }
+}

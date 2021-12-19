@@ -1,0 +1,131 @@
+.history-title {
+  margin-bottom: 3em;
+
+  width: 181px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.history__text {
+  margin-bottom: 5rem;
+
+  text-align: center;
+}
+
+.history__list {
+  margin-bottom: 2.812em;
+}
+
+.history__item {
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 1.375em;
+  }
+}
+
+.history__item--title {
+  color: $subDecorColor;
+  font-size: 2.5rem;
+  line-height: 1.35;
+}
+
+.history__item--text {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.history-box {
+  position: relative;
+  margin-bottom: 400px;
+}
+
+.history-box__bg {
+  position: absolute;
+  left: 150px;
+  top: 60px;
+  width: 115px;
+  height: 85px;
+  background-color: #ffe8d0;
+}
+
+.history-box__layer1 {
+  position: absolute;
+  left: 90px;
+  width: 137px;
+  height: 221px;
+}
+
+.history-box__layer2 {
+  position: absolute;
+  left: 150px;
+  top: 120px;
+}
+
+.layer2--img {
+  width: 136px;
+  height: 154px;
+  object-fit: cover;
+}
+
+.history-box__layer3 {
+  position: absolute;
+  top: 70px;
+}
+
+.layer3--img {
+  width: 125px;
+  height: 154px;
+}
+
+.history__card {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  min-width: 320px;
+  height: 357px;
+
+  text-align: center;
+
+  background-color: $mainTextColor;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url('../images/history-bg-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url('../images/history-bg-1x.jpg');
+  }
+}
+
+.history__card--title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.666em;
+
+  width: 200px;
+
+  color: $titleDecorColor;
+
+  font-family: 'Tinos', serif;
+  font-size: 1.875rem;
+  line-height: 1.133;
+}
+
+.history__card--text {
+  margin-bottom: 1.7em;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 290px;
+  text-align: center;
+  color: $accentTextColor;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.375;
+}
+
+.history__card--btn {
+  @include button;
+}
